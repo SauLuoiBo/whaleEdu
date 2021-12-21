@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/icons/logos/LogoWhale.svg" />
+          <link rel="logo" href="/icons/logos/LogoWhale.svg" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
