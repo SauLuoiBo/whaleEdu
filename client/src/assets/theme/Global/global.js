@@ -18,6 +18,7 @@ export default createGlobalStyle`
   }
   html {
     font-size: 62.5%;
+    background-color: #eef0f1;
     box-sizing: border-box;
     @media ${(props) => props.theme.breakpoints.lg} {
       font-size: 60%;

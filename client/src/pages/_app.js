@@ -1,11 +1,14 @@
 import { MUItheme, StyledTheme } from "../assets/theme";
+import { Layout } from "../Layout";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <StyledTheme>
       <MUItheme>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </MUItheme>
     </StyledTheme>
   );
