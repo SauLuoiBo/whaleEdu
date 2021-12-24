@@ -96,7 +96,13 @@ ExContainer.GetStart = function GetStart() {
         lại số điện thoại để nhận tư vấn
       </Typography>
       <SuiBreak xs={10} />
-      <Stack maxWidth={300} direction={"row"} justifyContent={"center"}>
+      <Stack
+        maxWidth={300}
+        direction={{ xs: "column", md: "row" }}
+        justifyContent={"center"}
+        alignItems={"center"}
+        spacing={{ xs: 0.5, md: 2 }}
+      >
         <Box>dsda</Box>
         <SuiButton text="Tu vans" />
       </Stack>
