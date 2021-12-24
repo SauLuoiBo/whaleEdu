@@ -5,7 +5,11 @@ import SuiLogo from "../SuiLogo/SuiLogo";
 const SuiButton = (props) => {
   const { text, onClick } = props;
   return (
-    <Button variant="containedPrimary" onClick={onClick}>
+    <Button
+      variant="containedPrimary"
+      sx={{ width: "fit-content" }}
+      onClick={onClick}
+    >
       <Typography variant="h2">{text || "text"}</Typography>
     </Button>
   );

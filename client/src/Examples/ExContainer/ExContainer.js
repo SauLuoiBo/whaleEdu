@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, TextField } from "@mui/material";
 import React from "react";
 import { SuiButton, SuiCard, SuiLogo } from "../../components";
 import Link from "next/link";
@@ -6,6 +6,8 @@ import { LOGIN, SIGNUP } from "../../assets/contants";
 import { numberFormat } from "../../util/cover/numberFormat";
 import SuiBreak from "../../components/SuiBreak/SuiBreak";
 import { Box } from "@mui/system";
+import { ExButton } from "..";
+import { AccountCircle } from "@mui/icons-material";
 
 const ExContainer = ({ children }) => {
   return (
@@ -97,14 +99,21 @@ ExContainer.GetStart = function GetStart() {
       </Typography>
       <SuiBreak xs={10} />
       <Stack
-        maxWidth={300}
         direction={{ xs: "column", md: "row" }}
         justifyContent={"center"}
         alignItems={"center"}
         spacing={{ xs: 0.5, md: 2 }}
       >
-        <Box>dsda</Box>
-        <SuiButton text="Tu vans" />
+        <Box width={200} sx={{ display: "flex", alignItems: "flex-end" }}>
+          <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+          <TextField
+            id="input-with-sx"
+            label="With sx"
+            variant="standard"
+            width="100%"
+          />
+        </Box>
+        <ExButton text="Tư vấn ngay" />
       </Stack>
     </Stack>
   );
