@@ -2,9 +2,9 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 
 const ExButton = (props) => {
-  const { text } = props;
+  const { text, onClick } = props;
   return (
-    <Button variant="contained">
+    <Button variant="contained" onClick={onClick}>
       <Typography
         variant="h2"
         sx={{ textTransform: "none", color: "white.main" }}
@@ -18,9 +18,9 @@ const ExButton = (props) => {
 export default ExButton;
 
 ExButton.Text = function Text(props) {
-  const { text } = props;
+  const { text, onClick } = props;
   return (
-    <Button variant="h2">
+    <Button variant="h2" onClick={onClick}>
       <Typography
         variant="h2"
         sx={{ textTransform: "none", color: "primary.main" }}

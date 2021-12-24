@@ -2,13 +2,22 @@ import React from "react";
 import { Button, Typography } from "@mui/material";
 import SuiLogo from "../SuiLogo/SuiLogo";
 
-const SuiButton = (props, { children }) => {
-  const { text } = props;
+const SuiButton = (props) => {
+  const { text, onClick } = props;
   return (
-    <Button variant="containedPrimary">
+    <Button variant="containedPrimary" onClick={onClick}>
       <Typography variant="h2">{text || "text"}</Typography>
     </Button>
   );
 };
 
 export default SuiButton;
+
+SuiButton.Full = function Full(props) {
+  const { text, onClick } = props;
+  return (
+    <Button variant="containedPrimary" sx={{ width: "100%" }} onClick={onClick}>
+      <Typography variant="h2">{text || "text"}</Typography>
+    </Button>
+  );
+};

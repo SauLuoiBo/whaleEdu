@@ -15,5 +15,4 @@ export default Layout;
 
 const Main = styled.main`
   margin-top: 13rem;
-  padding: 0 3rem;
 `;

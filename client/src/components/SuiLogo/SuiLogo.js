@@ -47,3 +47,33 @@ SuiLogo.Medium = function Large(props) {
     </>
   );
 };
+
+SuiLogo.Large = function Large(props) {
+  const { size, alt, src } = props;
+  const sizes = { width: 60 || size, height: 60 || size };
+  return (
+    <>
+      <Avatar
+        alt={alt || "logo"}
+        src={src || "/vercel.svg"}
+        sx={{ ...sizes }}
+        variant="square"
+      />
+    </>
+  );
+};
+
+SuiLogo.Small = function Small(props) {
+  const { size, alt, src } = props;
+  const sizes = { width: 20 || size, height: 20 || size };
+  return (
+    <>
+      <Avatar
+        alt={alt || "logo"}
+        src={src || "/vercel.svg"}
+        sx={{ ...sizes }}
+        variant="square"
+      />
+    </>
+  );
+};

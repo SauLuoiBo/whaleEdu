@@ -2,19 +2,18 @@ import React from "react";
 import { Stack, AppBar, Toolbar, Button, IconButton } from "@mui/material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
-
 import { ExButton, ExLogos } from "../../Examples";
 import SuiHidden from "../../components/SuiHidden/SuiHidden";
 import { Icon } from "@mui/material";
 import SuiVisible from "../../components/SuiVisible/SuiVisible";
+import { useRouter } from "next/router";
+import { SuiContainer } from "../../components";
 
 function HideOnScroll(props) {
   const { children, window } = props;
-
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
-
   return (
     <Slide appear={false} direction="down" in={!trigger}>
       {children}
@@ -22,11 +21,14 @@ function HideOnScroll(props) {
   );
 }
 
+//header
+
 const Header = () => {
+  const router = useRouter().push;
   return (
     <HideOnScroll>
       <AppBar sx={{ backgroundColor: "text.main", py: 2 }}>
-        <Toolbar>
+        <SuiContainer>
           <Stack
             width="100%"
             direction="row"
@@ -38,17 +40,24 @@ const Header = () => {
               <SuiVisible.md>
                 <Icon fontSize="large">add_circle</Icon>
               </SuiVisible.md>
-              <ExLogos />
+
+              <ExLogos onClick={() => router("/")} />
             </Stack>
 
             <Stack direction="row" spacing={2}>
               <SuiHidden>
-                <ExButton.Text text="Đăng nhập" />
+                <ExButton.Text
+                  text="Đăng nhập"
+                  onClick={() => router("/login")}
+                />
               </SuiHidden>
-              <ExButton text="Tạo tài khoản" />
+              <ExButton
+                text="Tạo tài khoản"
+                onClick={() => router("/signup")}
+              />
             </Stack>
           </Stack>
-        </Toolbar>
+        </SuiContainer>
       </AppBar>
     </HideOnScroll>
   );

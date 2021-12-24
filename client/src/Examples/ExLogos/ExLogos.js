@@ -2,9 +2,9 @@ import React from "react";
 import { SuiLogo } from "../../components";
 import { Button } from "@mui/material";
 
-const ExLogos = () => {
+const ExLogos = ({ onClick }) => {
   return (
-    <Button variant="text">
+    <Button variant="text" onClick={onClick}>
       <SuiLogo.Medium />
     </Button>
   );

@@ -6,6 +6,8 @@ import button from "../components/button";
 import icon from "../components/icon";
 import iconButton from "../components/iconButton";
 import svgIcon from "../components/svgIcon";
+import appBar from "../components/appBar";
+import toolBar from "../components/toolBar";
 
 const theme = createTheme({
   ...Defalttheme,
@@ -14,6 +16,8 @@ const theme = createTheme({
     MuiIconButton: { ...iconButton },
     MuiSvgIcon: { ...svgIcon },
     MuiIcon: { ...icon },
+    MuiAppBar: { ...appBar },
+    MuiToolbar: { ...toolBar },
   },
 });
 
