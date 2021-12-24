@@ -3,6 +3,8 @@ import { Box } from "@mui/system";
 import React from "react";
 import { SuiLogo } from "..";
 import { phoneFormat } from "../../util/cover/phoneFormat";
+import SuiBreak from "../SuiBreak/SuiBreak";
+import SuiStack from "../SuiStack/SuiStack";
 
 const SuiCard = () => {
   return <div></div>;
@@ -10,7 +12,13 @@ const SuiCard = () => {
 
 export default SuiCard;
 
-SuiCard.Advise = function Advise() {
+SuiCard.Advise = function Advise(props) {
+  const { advise, phone, fb } = props;
+
+  let fblink = `http://facebook.com/${fb || "daido.bo"}`;
+
+  let fbname = `m/${fb || "sauluoi"}`;
+
   return (
     <Stack
       width="100%"
@@ -28,39 +36,29 @@ SuiCard.Advise = function Advise() {
       >
         <SuiLogo.Large />
       </Box>
-      <Stack
-        width="100%"
-        direction="column"
-        alignItems="flex-start"
-        justifyContent="flex-start"
-      >
-        <Typography variant="h4">Tu van dang ky hoc</Typography>
-        <Stack
-          width="100%"
-          direction="row"
-          alignItems="flex-end"
-          justifyContent="flex-start"
-          spacing={1}
-        >
-          <Box>
-            <SuiLogo.Small />
-          </Box>
-          <Typography variant="h4">{phoneFormat("0948616896")}</Typography>
-        </Stack>
+      <SuiStack.ColumnFlex>
+        <Typography variant="h4">{advise || "advise"}</Typography>
+        <SuiBreak.Small />
 
-        <Stack
-          width="100%"
-          direction="row"
-          alignItems="flex-end"
-          justifyContent="flex-start"
-          spacing={1}
-        >
+        <SuiStack.Row sx={{ cursor: "pointer" }}>
           <Box>
             <SuiLogo.Small />
           </Box>
-          <Typography>asdasd</Typography>
-        </Stack>
-      </Stack>
+          <a href={`tel:${phone}`}>
+            <Typography variant="h4">
+              {phoneFormat(phone || "0948616896")}
+            </Typography>
+          </a>
+        </SuiStack.Row>
+        <SuiStack.Row sx={{ cursor: "pointer" }}>
+          <Box>
+            <SuiLogo.Small />
+          </Box>
+          <a href={fblink} target="_blank">
+            <Typography variant="h4">{fbname}</Typography>
+          </a>
+        </SuiStack.Row>
+      </SuiStack.ColumnFlex>
     </Stack>
   );
 };

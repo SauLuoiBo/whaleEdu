@@ -1,9 +1,11 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
-import { ExButton } from "..";
-import { SuiButton, SuiCard } from "../../components";
+import { SuiButton, SuiCard, SuiLogo } from "../../components";
 import Link from "next/link";
 import { LOGIN, SIGNUP } from "../../assets/contants";
+import { numberFormat } from "../../util/cover/numberFormat";
+import SuiBreak from "../../components/SuiBreak/SuiBreak";
+import { Box } from "@mui/system";
 
 const ExContainer = ({ children }) => {
   return (
@@ -27,7 +29,7 @@ ExContainer.SignUp = function SignUp() {
     >
       <Typography variant="h3">
         <span style={{ color: "blue" }}> Hệ sinh thái Whale Edu {""}</span> là
-        hệ sinh thái của 2499 thành viên tuyệt vời
+        hệ sinh thái của {numberFormat("2499")} thành viên tuyệt vời
       </Typography>
       <Typography variant="h3">
         Cùng tham gia và học tập trong thế giới của Whale Education
@@ -42,7 +44,7 @@ ExContainer.SignUp = function SignUp() {
   );
 };
 
-ExContainer.Contact = function Contact() {
+ExContainer.Advise = function Contact() {
   return (
     <Stack
       direction="column"
@@ -52,7 +54,7 @@ ExContainer.Contact = function Contact() {
       borderColor="yellow"
       borderRadius={3}
       p={0}
-      backgroundColor="text.main"
+      backgroundColor="white.main"
       overflow="hidden"
     >
       <Stack
@@ -62,11 +64,42 @@ ExContainer.Contact = function Contact() {
         p={1}
         backgroundColor="yellow"
       >
-        <Typography variant="h4">Tu Van 24/7</Typography>
+        <Stack direction="row" alignItems="flex-end" spacing={0.5}>
+          <SuiLogo.Small />
+          <Typography variant="h4">Tư vấn 24/7</Typography>
+        </Stack>
       </Stack>
-      <SuiCard.Advise />
-      <SuiCard.Advise />
-      <SuiCard.Advise />
+      <SuiCard.Advise
+        advise="Tư vấn đăng ký học"
+        fb="daido.bo"
+        phone={"0948616896"}
+      />
+      <SuiCard.Advise advise="Tư vấn môn toán" fb="daido.bo" />
+      <SuiCard.Advise advise="Tư vấn môn tiếng anh" fb="daido.bo" />
+    </Stack>
+  );
+};
+
+ExContainer.GetStart = function GetStart() {
+  return (
+    <Stack
+      width="100%"
+      px={{ xs: 5, lg: 30 }}
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      textAlign={"center"}
+    >
+      <Typography variant="h2">Nhận tư vấn học</Typography>
+      <Typography>
+        Nếu có bất kỳ thắc mắc nào về chương trình học tại Whale Education, để
+        lại số điện thoại để nhận tư vấn
+      </Typography>
+      <SuiBreak xs={10} />
+      <Stack maxWidth={300} direction={"row"} justifyContent={"center"}>
+        <Box>dsda</Box>
+        <SuiButton text="Tu vans" />
+      </Stack>
     </Stack>
   );
 };

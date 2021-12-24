@@ -39,7 +39,7 @@ export default function Home() {
               m={0}
             >
               <Stack direction="column" spacing={2} width={250}>
-                <ExContainer.Contact />
+                <ExContainer.Advise />
               </Stack>
             </Stack>
           </Box>
