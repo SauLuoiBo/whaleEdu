@@ -54,7 +54,7 @@ SuiCard.Advise = function Advise(props) {
           <Box>
             <SuiLogo.Small />
           </Box>
-          <a href={fblink} target="_blank">
+          <a href={fblink} target="_blank" rel="noreferrer">
             <Typography variant="h4">{fbname}</Typography>
           </a>
         </SuiStack.Row>
