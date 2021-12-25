@@ -1,13 +1,11 @@
-import { Stack, Typography, TextField } from "@mui/material";
+import { Stack, Typography, Box, TextField } from "@mui/material";
 import React from "react";
-import { SuiButton, SuiCard, SuiLogo } from "../../components";
+import { SuiButton, SuiCard, SuiLogo, SuiTextField } from "../../components";
 import Link from "next/link";
 import { LOGIN, SIGNUP } from "../../assets/contants";
 import { numberFormat } from "../../util/cover/numberFormat";
 import SuiBreak from "../../components/SuiBreak/SuiBreak";
-import { Box } from "@mui/system";
 import { ExButton } from "..";
-import { AccountCircle } from "@mui/icons-material";
 
 const ExContainer = ({ children }) => {
   return (
@@ -105,14 +103,9 @@ ExContainer.GetStart = function GetStart() {
         spacing={{ xs: 0.5, md: 2 }}
       >
         <Box width={200} sx={{ display: "flex", alignItems: "flex-end" }}>
-          <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
-          <TextField
-            id="input-with-sx"
-            label="With sx"
-            variant="standard"
-            width="100%"
-          />
+          <SuiTextField />
         </Box>
+
         <ExButton text="Tư vấn ngay" />
       </Stack>
     </Stack>

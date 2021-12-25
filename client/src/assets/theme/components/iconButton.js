@@ -10,4 +10,8 @@ export default {
       },
     },
   },
+
+  iconSizeMedium: {
+    fontSize: "2rem",
+  },
 };

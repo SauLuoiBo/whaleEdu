@@ -13,3 +13,11 @@ export default SuiBreak;
 SuiBreak.Small = function Small() {
   return <Box maxWidth="100%" sx={{ height: "1rem" }}></Box>;
 };
+
+SuiBreak.Medium = function Medium() {
+  return <Box maxWidth="100%" sx={{ height: "2rem" }}></Box>;
+};
+
+SuiBreak.Large = function Large() {
+  return <Box maxWidth="100%" sx={{ height: "4rem" }}></Box>;
+};

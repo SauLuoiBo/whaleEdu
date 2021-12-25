@@ -11,3 +11,11 @@ const ExLogos = ({ onClick }) => {
 };
 
 export default ExLogos;
+
+ExLogos.LongLogo = function Center({ onClick }) {
+  return (
+    <Button variant="text" onClick={onClick}>
+      <SuiLogo w={150} h={45} src="/icons/logos/LogoWhaleDai.svg" />
+    </Button>
+  );
+};

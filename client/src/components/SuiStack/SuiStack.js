@@ -22,13 +22,43 @@ SuiStack.Row = function Row({ children, sx }) {
   );
 };
 
-SuiStack.ColumnFlex = function ColumnFlex({ children }) {
+SuiStack.ColumnFlex = function ColumnFlex({ children, sx }) {
   return (
     <Stack
       width="100%"
       direction="column"
       alignItems="flex-start"
       justifyContent="flex-start"
+      sx={sx}
+    >
+      {children}
+    </Stack>
+  );
+};
+
+SuiStack.Column = function Column({ children, sx }) {
+  return (
+    <Stack
+      width="100%"
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      sx={sx}
+    >
+      {children}
+    </Stack>
+  );
+};
+
+SuiStack.Center = function Center({ children, sx }) {
+  return (
+    <Stack
+      direction="row"
+      alignItems="flex-start"
+      justifyContent="space-between"
+      spacing={1}
+      flexWrap="wrap"
+      sx={sx}
     >
       {children}
     </Stack>

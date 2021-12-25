@@ -46,15 +46,9 @@ const Header = () => {
 
             <Stack direction="row" spacing={2}>
               <SuiHidden>
-                <ExButton.Text
-                  text="Đăng nhập"
-                  onClick={() => router("/login")}
-                />
+                <ExButton.Text text="Đăng nhập" href="/login" />
               </SuiHidden>
-              <ExButton
-                text="Tạo tài khoản"
-                onClick={() => router("/signup")}
-              />
+              <ExButton text="Tạo tài khoản" href="/signup" />
             </Stack>
           </Stack>
         </SuiContainer>
