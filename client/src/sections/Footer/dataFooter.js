@@ -1,3 +1,5 @@
+import { getSocial } from "../../util/getLinkPublic/getLinkPublic";
+
 export const dataFooter = [
   {
     name: "Dịch vụ",
@@ -32,22 +34,22 @@ export const dataFooter = [
 export const dataFooter_Social = [
   {
     link: "http://facebook.com/daido.bo",
-    src: "/icons/social/facebook.svg",
+    src: getSocial("facebook.svg"),
     alt: "facebook",
   },
   {
     link: "http://facebook.com/daido.bo",
-    src: "/icons/social/youtube.svg",
+    src: getSocial("youtube.svg"),
     alt: "youtube",
   },
   {
     link: "http://facebook.com/daido.bo",
-    src: "/icons/social/tiktok.png",
+    src: getSocial("tiktok.png"),
     alt: "tiktok",
   },
   {
     link: "http://facebook.com/daido.bo",
-    src: "/icons/social/instagram.png",
+    src: getSocial("instagram.png"),
     alt: "instagram",
   },
 ];
