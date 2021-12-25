@@ -3,11 +3,9 @@ import React from "react";
 import { SuiContainer, SuiIconButton, SuiStack } from "../../components";
 import SuiBreak from "../../components/SuiBreak/SuiBreak";
 import { ExContainer, ExLogos } from "../../Examples";
-import { useRouter } from "next/router";
+import { dataFooter, dataFooter_Social } from "./dataFooter";
 
 const Footer = () => {
-  const router = useRouter().push;
-
   return (
     <footer style={{ backgroundColor: "#7BC8F3", height: "fit-content" }}>
       <SuiBreak xs={10} lg={30} />
@@ -20,51 +18,59 @@ const Footer = () => {
           direction={{ xs: "column", md: "row" }}
           justifyContent={"space-between"}
           alignItems={{ xs: "flex-start", md: "flex-start" }}
-          spacing={1}
+          spacing={4}
         >
-          <Box sx={{ minWidth: "300px" }}>
+          <Box sx={{ width: "300px" }}>
             <SuiStack.ColumnFlex>
-              <ExLogos.LongLogo onClick={() => router("/")} />
-              <SuiIconButton text="huhuuhu" />
-              <Typography variant="h4">Thong tin</Typography>
-              <Typography variant="h4">Thong tin</Typography>
+              <ExLogos.LongLogo href={"/"} />
+              <Typography variant="h2">" Tôi tự học, bạn cũng thế "</Typography>
+              <SuiBreak.Small />
+
+              <SuiStack.Center>
+                {dataFooter_Social.map((item, i) => {
+                  return (
+                    <SuiIconButton.Logo
+                      key={i}
+                      size={30}
+                      src={item.src}
+                      href={item.link}
+                      alt={item.alt}
+                    />
+                  );
+                })}
+              </SuiStack.Center>
+              <SuiBreak.Small />
+              <Typography variant="h4">
+                Theo dõi các trang mạng xã hội của Whale Edu để cập nhật các tin
+                tức mới của chúng tôi.
+              </Typography>
             </SuiStack.ColumnFlex>
           </Box>
 
           {/* khung  */}
           <Box sx={{ width: "100%" }}>
             <SuiStack.Center>
-              <SuiStack.ColumnFlex sx={{ width: "25ch" }}>
-                <Typography variant="h2">Dịch vụ online</Typography>
-                <SuiBreak.Small />
-                <SuiStack.ColumnFlex>
-                  <SuiIconButton text="Chương trình học" />
-                  <SuiIconButton text="Ngân hàng bài tập" />
-                  <SuiIconButton text="Kỹ năng học" />
-                  <SuiIconButton text="Chia sẻ kiến thức" />
-                </SuiStack.ColumnFlex>
-              </SuiStack.ColumnFlex>
-              <SuiStack.ColumnFlex sx={{ width: "25ch" }}>
-                <Typography variant="h2">Đội ngũ Whale Edu</Typography>
-                <SuiBreak.Small />
-                <SuiStack.ColumnFlex>
-                  <SuiIconButton text="Thành viên sáng lập" />
-                  <SuiIconButton text="Giáo viên chính" />
-                  <SuiIconButton text="Công nghệ giảng dạy" />
-                  <SuiIconButton text="Liên hệ chúng tôi" />
-                </SuiStack.ColumnFlex>
-              </SuiStack.ColumnFlex>
-              <SuiStack.ColumnFlex sx={{ width: "25ch" }}>
-                <Typography variant="h2">Hỗ trợ</Typography>
-                <SuiBreak.Small />
-                <SuiStack.ColumnFlex>
-                  <SuiIconButton text="Câu hỏi thường gặp" />
-                  <SuiIconButton text="Hướng dẫn nạp tiền" />
-                  <SuiIconButton text="Hướng dẫn thanh toán" />
-                  <SuiIconButton text="Đặt câu hỏi" />
-                </SuiStack.ColumnFlex>
-              </SuiStack.ColumnFlex>
-              <SuiStack.ColumnFlex sx={{ width: "30ch" }}>
+              {dataFooter.map((data, i) => {
+                return (
+                  <SuiStack.ColumnFlex sx={{ width: "23ch" }} key={i}>
+                    <Typography variant="h2">{data.name || "name"}</Typography>
+                    <SuiBreak.Small />
+                    <SuiStack.ColumnFlex>
+                      {data.data.map((item, i) => {
+                        return (
+                          <SuiIconButton
+                            text={item.text}
+                            href={item.link}
+                            key={i}
+                          />
+                        );
+                      })}
+                    </SuiStack.ColumnFlex>
+                  </SuiStack.ColumnFlex>
+                );
+              })}
+
+              <SuiStack.ColumnFlex sx={{ width: { xs: "100%", md: "37ch" } }}>
                 <Typography variant="h2">Cơ sở offline</Typography>
                 <SuiBreak.Small />
                 <SuiStack.ColumnFlex>

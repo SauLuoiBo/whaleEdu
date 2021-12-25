@@ -53,6 +53,7 @@ SuiStack.Column = function Column({ children, sx }) {
 SuiStack.Center = function Center({ children, sx }) {
   return (
     <Stack
+      width={"100%"}
       direction="row"
       alignItems="flex-start"
       justifyContent="space-between"

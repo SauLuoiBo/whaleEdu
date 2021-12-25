@@ -63,17 +63,17 @@ SuiLogo.Large = function Large(props) {
   );
 };
 
-SuiLogo.Small = function Small(props) {
-  const { size, alt, src } = props;
-  const sizes = { width: 20 || size, height: 20 || size };
-  return (
-    <>
-      <Avatar
-        alt={alt || "logo"}
-        src={src || "/vercel.svg"}
-        sx={{ ...sizes }}
-        variant="square"
-      />
-    </>
-  );
-};
+// SuiLogo.Small = function Small(props) {
+//   const { size, alt, src } = props;
+//   const sizes = { width: 20 || size, height: 20 || size };
+//   return (
+//     <>
+//       <Avatar
+//         alt={alt || "logo"}
+//         src={src || "/vercel.svg"}
+//         sx={{ ...sizes }}
+//         variant="square"
+//       />
+//     </>
+//   );
+// };
