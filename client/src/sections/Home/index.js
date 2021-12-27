@@ -1,3 +1,4 @@
-import HomeBanner from "./Banner/HomeBanner";
+import HomeBanner from "./HomeBanner/HomeBanner";
+import HomeKeyBlog from "./HomeKeyBlog/HomeKeyBlog";
 
-export { HomeBanner };
+export { HomeBanner, HomeKeyBlog };

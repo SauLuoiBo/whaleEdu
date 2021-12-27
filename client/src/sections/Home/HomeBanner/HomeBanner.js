@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectCube, Pagination, Autoplay } from "swiper";
 
 import ExImage from "../../../Examples/ExImage/ExImage";
-import { height } from "@mui/system";
 
 SwiperCore.use([EffectCube, Pagination, Autoplay]);
 

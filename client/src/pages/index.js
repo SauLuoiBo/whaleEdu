@@ -6,7 +6,7 @@ import { SuiContainer } from "../components";
 import SuiHidden from "../components/SuiHidden/SuiHidden";
 
 import { ExContainer } from "../Examples";
-import { HomeBanner } from "../sections/Home";
+import { HomeBanner, HomeKeyBlog } from "../sections/Home";
 
 export default function Home() {
   return (
@@ -50,6 +50,7 @@ export default function Home() {
               <Box minWidth={{ xs: "100%", md: 270 }}>
                 <Stack direction="column" spacing={2}>
                   <ExContainer.Advise />
+                  <HomeKeyBlog />
                 </Stack>
               </Box>
             </Stack>

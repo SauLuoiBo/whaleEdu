@@ -17,3 +17,8 @@ export const getBanner = (name) => {
   let link = `/images/banner/${name}`;
   return link;
 };
+
+export const getAvatar = (name) => {
+  let link = `/images/avatar/${name}`;
+  return link;
+};
