@@ -7,3 +7,8 @@ export const getSocial = (name) => {
   let link = `/icons/social/${name}`;
   return link;
 };
+
+export const getButton = (name) => {
+  let link = `/icons/buttons/${name}`;
+  return link;
+};

@@ -18,6 +18,21 @@ const SuiLogo = (props) => {
 
 export default SuiLogo;
 
+SuiLogo.Smallest = function Small(props) {
+  const { size, alt, src } = props;
+  const sizes = { width: 15 || size, height: 15 || size };
+  return (
+    <>
+      <Avatar
+        alt={alt || "logo"}
+        src={src || "/vercel.svg"}
+        sx={{ ...sizes }}
+        variant="square"
+      />
+    </>
+  );
+};
+
 SuiLogo.Small = function Small(props) {
   const { size, alt, src } = props;
   const sizes = { width: 24 || size, height: 24 || size };

@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import { SuiContainer } from "../components";
 import SuiHidden from "../components/SuiHidden/SuiHidden";
-import SuiVisible from "../components/SuiVisible/SuiVisible";
+
 import { ExContainer } from "../Examples";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
           spacing={{ lg: 2, sx: 0 }}
         >
           <SuiHidden.lg>
-            <Stack direction="column" spacing={2} width={300}>
+            <Stack direction="column" spacing={2} width={260}>
               <ExContainer.SignUp />
               <ExContainer.SignUp />
               <ExContainer.SignUp />
@@ -32,15 +32,18 @@ export default function Home() {
           </SuiHidden.lg>
           <Box sx={{ width: "100%" }}>
             <Stack
-              direction="row"
+              direction={{ xs: "column", md: "row" }}
               justifyContent="flex-start"
               alignItems="flex-start"
               spacing={0.5}
               m={0}
             >
-              <Stack direction="column" spacing={2} width={250}>
-                <ExContainer.Advise />
-              </Stack>
+              <Stack width={"100%"}>ads</Stack>
+              <Box minWidth={270}>
+                <Stack direction="column" spacing={2}>
+                  <ExContainer.Advise />
+                </Stack>
+              </Box>
             </Stack>
           </Box>
         </Stack>

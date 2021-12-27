@@ -1,11 +1,12 @@
 import { Stack, Typography, Box, TextField } from "@mui/material";
 import React from "react";
-import { SuiButton, SuiCard, SuiLogo, SuiTextField } from "../../components";
+import { SuiButton, SuiStack, SuiLogo, SuiTextField } from "../../components";
 import Link from "next/link";
 import { LOGIN, SIGNUP } from "../../assets/contants";
 import { numberFormat } from "../../util/cover/numberFormat";
 import SuiBreak from "../../components/SuiBreak/SuiBreak";
-import { ExButton } from "..";
+import { ExButton, ExCard } from "..";
+import { getButton } from "../../util/getLinkPublic/getLinkPublic";
 
 const ExContainer = ({ children }) => {
   return (
@@ -65,17 +66,34 @@ ExContainer.Advise = function Contact() {
         backgroundColor="yellow"
       >
         <Stack direction="row" alignItems="flex-end" spacing={0.5}>
-          <SuiLogo.Small />
-          <Typography variant="h4">Tư vấn 24/7</Typography>
+          <SuiLogo.Small src={getButton("phoneGreen.svg")} />
+          <Typography variant="h2">Tư vấn 24/7</Typography>
         </Stack>
       </Stack>
-      <SuiCard.Advise
-        advise="Tư vấn đăng ký học"
-        fb="daido.bo"
-        phone={"0948616896"}
-      />
-      <SuiCard.Advise advise="Tư vấn môn toán" fb="daido.bo" />
-      <SuiCard.Advise advise="Tư vấn môn tiếng anh" fb="daido.bo" />
+      <SuiBreak.Medium />
+
+      <SuiStack.ColumnFlex>
+        <ExCard.Advise
+          advise="Tư vấn đăng ký học"
+          fb="daido.bo"
+          phone={"0948616896"}
+        />
+        <ExCard.Advise
+          advise="Tư vấn môn toán"
+          fb="daido.bo"
+          phone={"0948616896"}
+        />
+        <ExCard.Advise
+          advise="Tư vấn môn tiếng anh"
+          fb="daido.bo"
+          phone={"0948616896"}
+        />
+      </SuiStack.ColumnFlex>
+      <SuiBreak.Medium />
+      <SuiStack.ColumnFlex sx={{ paddingLeft: "10px" }}>
+        <ExButton.Hotline />
+      </SuiStack.ColumnFlex>
+      <SuiBreak.Small />
     </Stack>
   );
 };

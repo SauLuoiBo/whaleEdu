@@ -1,18 +1,17 @@
 import { Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { SuiLogo } from "..";
+import { SuiLogo, SuiBreak, SuiStack } from "../../components";
 import { phoneFormat } from "../../util/cover/phoneFormat";
-import SuiBreak from "../SuiBreak/SuiBreak";
-import SuiStack from "../SuiStack/SuiStack";
+import { getButton } from "../../util/getLinkPublic/getLinkPublic";
 
-const SuiCard = () => {
+const ExCard = () => {
   return <div></div>;
 };
 
-export default SuiCard;
+export default ExCard;
 
-SuiCard.Advise = function Advise(props) {
+ExCard.Advise = function Advisee(props) {
   const { advise, phone, fb } = props;
 
   let fblink = `http://facebook.com/${fb || "daido.bo"}`;
@@ -37,12 +36,12 @@ SuiCard.Advise = function Advise(props) {
         <SuiLogo.Large />
       </Box>
       <SuiStack.ColumnFlex>
-        <Typography variant="h4">{advise || "advise"}</Typography>
+        <Typography variant="h3">{advise || "advise"}</Typography>
         <SuiBreak.Small />
 
         <SuiStack.Row sx={{ cursor: "pointer" }}>
           <Box>
-            <SuiLogo.Small />
+            <SuiLogo.Smallest src={getButton("phoneSmall.svg")} />
           </Box>
           <a href={`tel:${phone || "0948616896"}`}>
             <Typography variant="h4">
@@ -50,9 +49,10 @@ SuiCard.Advise = function Advise(props) {
             </Typography>
           </a>
         </SuiStack.Row>
+        <SuiBreak.Small />
         <SuiStack.Row sx={{ cursor: "pointer" }}>
           <Box>
-            <SuiLogo.Small />
+            <SuiLogo.Smallest src={getButton("fbSmall.svg")} />
           </Box>
           <a href={fblink} target="_blank" rel="noreferrer">
             <Typography variant="h4">{fbname}</Typography>
