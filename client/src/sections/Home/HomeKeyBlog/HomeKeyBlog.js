@@ -1,7 +1,9 @@
 import React from "react";
 import { SuiStack } from "../../../components";
 import { ExLogos } from "../../../Examples";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import SuiAvatar from "../../../components/SuiAvatar/SuiAvatar";
+import { getAvatar } from "../../../util/getLinkPublic/getLinkPublic";
 
 const HomeKeyBlog = () => {
   return (
@@ -9,7 +11,8 @@ const HomeKeyBlog = () => {
       <Box>
         <SuiStack.ColumnFlex>
           <SuiStack.Row>
-            <ExLogos.SmallLogo />
+            <SuiAvatar src={getAvatar("daibo.png")} />
+            <Typography variant="h4"> Thầy Nam Anh</Typography>
           </SuiStack.Row>
         </SuiStack.ColumnFlex>
       </Box>
