@@ -21,10 +21,13 @@ function HideOnScroll(props) {
   );
 }
 
+// useEffect will run on stageCanvasRef value assignment
+
 //header
 
 const Header = () => {
   const router = useRouter().push;
+
   return (
     <HideOnScroll>
       <AppBar sx={{ backgroundColor: "text.main", py: 2 }}>

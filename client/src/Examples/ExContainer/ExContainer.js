@@ -57,6 +57,7 @@ ExContainer.Advise = function Contact() {
       p={0}
       backgroundColor="white.main"
       overflow="hidden"
+      width={"100%"}
     >
       <Stack
         width="100%"

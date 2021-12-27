@@ -12,3 +12,8 @@ export const getButton = (name) => {
   let link = `/icons/buttons/${name}`;
   return link;
 };
+
+export const getBanner = (name) => {
+  let link = `/images/banner/${name}`;
+  return link;
+};
