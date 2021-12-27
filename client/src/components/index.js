@@ -7,6 +7,7 @@ import SuiTextField from "./SuiTextField/SuiTextField";
 import SuiIconButton from "./SuiIconButton/SuiIconButton";
 import SuiIcon from "./SuiIcon/SuiIcon";
 import SuiBreak from "./SuiBreak/SuiBreak";
+import SuiAvatar from "./SuiAvatar/SuiAvatar";
 
 export {
   SuiButton,
@@ -18,4 +19,5 @@ export {
   SuiIconButton,
   SuiIcon,
   SuiBreak,
+  SuiAvatar,
 };

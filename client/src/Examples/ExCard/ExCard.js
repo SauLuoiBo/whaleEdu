@@ -1,9 +1,10 @@
-import { Stack, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Stack, Typography, Box } from "@mui/material";
+
 import React from "react";
-import { SuiLogo, SuiBreak, SuiStack } from "../../components";
+import { SuiLogo, SuiBreak, SuiStack, SuiAvatar } from "../../components";
 import { phoneFormat } from "../../util/cover/phoneFormat";
 import { getButton } from "../../util/getLinkPublic/getLinkPublic";
+import { getAvatar } from "../../util/getLinkPublic/getLinkPublic";
 
 const ExCard = () => {
   return <div></div>;
