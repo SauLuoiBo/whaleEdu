@@ -24,7 +24,7 @@ export default function Home() {
           spacing={{ lg: 2, sx: 0 }}
         >
           <SuiHidden.lg>
-            <Stack direction="column" spacing={2} width={260}>
+            <Stack direction="column" spacing={2} width={220}>
               <ExContainer.SignUp />
               <ExContainer.SignUp />
               <ExContainer.SignUp />
