@@ -13,6 +13,11 @@ export const getButton = (name) => {
   return link;
 };
 
+export const getMenu = (name) => {
+  let link = `/icons/menu/${name}`;
+  return link;
+};
+
 export const getBanner = (name) => {
   let link = `/images/banner/${name}`;
   return link;

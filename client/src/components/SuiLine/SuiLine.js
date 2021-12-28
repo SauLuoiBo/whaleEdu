@@ -5,7 +5,6 @@ const SuiLine = (props) => {
   const { px, color } = props;
   const getLineFormat = (px, color) => {
     var borderBottom = `${px}px solid ${color}`;
-    console.log(borderBottom);
     return borderBottom;
   };
 

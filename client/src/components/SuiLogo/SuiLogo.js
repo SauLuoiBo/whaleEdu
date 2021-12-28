@@ -78,6 +78,21 @@ SuiLogo.Large = function Large(props) {
   );
 };
 
+SuiLogo.Menu = function Large(props) {
+  const { size, alt, src } = props;
+  const sizes = { width: 45 || size, height: 45 || size };
+  return (
+    <>
+      <Avatar
+        alt={alt || "menu"}
+        src={src || "/vercel.svg"}
+        sx={{ ...sizes }}
+        variant="square"
+      />
+    </>
+  );
+};
+
 // SuiLogo.Small = function Small(props) {
 //   const { size, alt, src } = props;
 //   const sizes = { width: 20 || size, height: 20 || size };

@@ -5,5 +5,15 @@ import ExCard from "./ExCard/ExCard";
 import ExBlog from "./ExBlog/ExBlog";
 import ExImage from "./ExImage/ExImage";
 import ExText from "./ExText/ExText";
+import ExMenu from "./ExMenu/ExMenu";
 
-export { ExLogos, ExButton, ExContainer, ExCard, ExBlog, ExImage, ExText };
+export {
+  ExLogos,
+  ExButton,
+  ExContainer,
+  ExCard,
+  ExBlog,
+  ExImage,
+  ExText,
+  ExMenu,
+};

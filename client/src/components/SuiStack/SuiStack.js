@@ -22,13 +22,14 @@ SuiStack.Row = function Row({ children, sx }) {
   );
 };
 
-SuiStack.ColumnFlex = function ColumnFlex({ children, sx }) {
+SuiStack.ColumnFlex = function ColumnFlex({ children, sx, spacing }) {
   return (
     <Stack
       width="100%"
       direction="column"
       alignItems="flex-start"
       justifyContent="flex-start"
+      spacing={spacing || "0"}
       sx={sx}
     >
       {children}

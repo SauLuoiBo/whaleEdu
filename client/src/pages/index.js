@@ -5,8 +5,9 @@ import Head from "next/head";
 import { SuiBreak, SuiContainer } from "../components";
 import SuiHidden from "../components/SuiHidden/SuiHidden";
 
-import { ExContainer } from "../Examples";
+import { ExContainer, ExMenu } from "../Examples";
 import { HomeBanner, HomeKeyBlog, HomeWrapperCard } from "../sections/Home";
+import { homePageMenu } from "../data/dataHomePage";
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
           <SuiHidden.lg>
             <Stack direction="column" spacing={2} width={220}>
               <ExContainer.SignUp />
-              <ExContainer.SignUp />
-              <ExContainer.SignUp />
-              <ExContainer.SignUp />
+              {homePageMenu.map((item, i) => {
+                return <ExMenu key={i} menu={item.menu} title={item.title} />;
+              })}
             </Stack>
           </SuiHidden.lg>
           {/* left */}
