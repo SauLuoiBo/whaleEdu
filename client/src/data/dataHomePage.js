@@ -16,4 +16,40 @@ export const homePageMenu = [
       { text: "Đăng ký", href: mainMenu.pricing, icon: "menu-join.svg" },
     ],
   },
+  {
+    title: "Đời sống học sinh",
+    menu: [
+      {
+        text: "Câu chuyện học tập",
+        href: mainMenu.homePage,
+        icon: "menu-we.svg",
+      },
+      { text: "Chia sẻ", href: mainMenu.courses, icon: "menu-share.svg" },
+      { text: "Giao lưu", href: mainMenu.skill, icon: "menu-trade.svg" },
+    ],
+  },
+  {
+    title: "Đời sống giáo viên",
+    menu: [
+      {
+        text: "Câu chuyện đào tạo",
+        href: mainMenu.homePage,
+        icon: "menu-teacher.svg",
+      },
+      { text: "Chia sẻ", href: mainMenu.courses, icon: "menu-share.svg" },
+      { text: "Giao lưu", href: mainMenu.skill, icon: "menu-trade.svg" },
+    ],
+  },
+  {
+    title: "Xem thêm",
+    menu: [
+      {
+        text: "Điều khoản",
+        href: mainMenu.homePage,
+        icon: "menu-term.svg",
+      },
+      { text: "Chính sách", href: mainMenu.courses, icon: "menu-policy.svg" },
+      { text: "Hướng dẫn", href: mainMenu.skill, icon: "menu-tutorial.svg" },
+    ],
+  },
 ];
