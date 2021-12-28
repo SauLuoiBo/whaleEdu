@@ -69,7 +69,12 @@ export default function Home() {
                 sx={{ overflow: "hidden" }}
                 overflow={"hidden"}
               >
-                <HomeWrapperCard />
+                <HomeWrapperCard
+                  subtitle="Kiến thức thi đại học"
+                  describe="dsaijsda ioajd joiasdio joiasdji jaiosdjoidaj oiadjsiojo sdk kjsjd jkasdh kjhas"
+                />
+                <HomeWrapperCard subtitle="Kiến thức thi vào 10" />
+                <HomeWrapperCard subtitle="Kiến thức phổ thông" />
               </Stack>
               <Box minWidth={{ xs: "100%", md: 270 }}>
                 <Stack direction="column" spacing={2}>

@@ -8,6 +8,7 @@ import SuiIconButton from "./SuiIconButton/SuiIconButton";
 import SuiIcon from "./SuiIcon/SuiIcon";
 import SuiBreak from "./SuiBreak/SuiBreak";
 import SuiAvatar from "./SuiAvatar/SuiAvatar";
+import SuiLine from "./SuiLine/SuiLine";
 
 export {
   SuiButton,
@@ -20,4 +21,5 @@ export {
   SuiIcon,
   SuiBreak,
   SuiAvatar,
+  SuiLine,
 };

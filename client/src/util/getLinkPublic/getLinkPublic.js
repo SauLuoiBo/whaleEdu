@@ -22,3 +22,8 @@ export const getAvatar = (name) => {
   let link = `/images/avatar/${name}`;
   return link;
 };
+
+export const getCardSubject = (name) => {
+  let link = `/images/cardSubjects/${name}`;
+  return link;
+};

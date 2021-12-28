@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
-import SuiLogo from "../SuiLogo/SuiLogo";
 
 const SuiButton = (props) => {
   const { text, onClick } = props;

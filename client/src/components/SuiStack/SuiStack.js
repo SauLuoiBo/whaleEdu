@@ -43,6 +43,7 @@ SuiStack.Column = function Column({ children, sx }) {
       direction="column"
       alignItems="center"
       justifyContent="center"
+      mx="auto"
       sx={sx}
     >
       {children}
