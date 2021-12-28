@@ -1,6 +1,6 @@
 import { Typography, Box, Button } from "@mui/material";
 import React from "react";
-import { SuiBreak, SuiLogo, SuiStack } from "../../components";
+import { SuiBreak, SuiLine, SuiLogo, SuiStack } from "../../components";
 import { getMenu } from "../../util/getLinkPublic/getLinkPublic";
 
 const ExMenu = (props) => {
@@ -28,6 +28,8 @@ const ExMenu = (props) => {
         <SuiBreak.Small />
         <SuiStack.ColumnFlex spacing={1}>{data}</SuiStack.ColumnFlex>
       </SuiStack.ColumnFlex>
+      <SuiBreak.Small />
+      <SuiLine color="gray" px="0.5" sx={{ opacity: 0.5 }} />
     </Box>
   );
 };

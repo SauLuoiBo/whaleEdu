@@ -44,7 +44,7 @@ const Header = () => {
                 <Icon fontSize="large">add_circle</Icon>
               </SuiVisible.md>
 
-              <ExLogos onClick={() => router("/")} />
+              <ExLogos.LongLogo onClick={() => router("/")} />
             </Stack>
 
             <Stack direction="row" spacing={2}>

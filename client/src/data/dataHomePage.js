@@ -14,6 +14,16 @@ export const homePageMenu = [
       },
       { text: "Bài tập", href: mainMenu.excercise, icon: "menu-exercise.svg" },
       { text: "Đăng ký", href: mainMenu.pricing, icon: "menu-join.svg" },
+      {
+        text: "Học trực tiếp",
+        href: mainMenu.pricing,
+        icon: "menu-join.svg",
+      },
+      {
+        text: "Blog chia sẻ",
+        href: mainMenu.pricing,
+        icon: "menu-join.svg",
+      },
     ],
   },
   {
