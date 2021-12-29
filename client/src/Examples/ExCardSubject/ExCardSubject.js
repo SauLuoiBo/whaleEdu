@@ -12,6 +12,7 @@ const ExCardSubject = () => {
       border={"2px solid white"}
       overflow={"hidden"}
       width={"100%"}
+      maxWidth={300}
       sx={{
         "&:hover": {
           transform: "scale(1.02)",

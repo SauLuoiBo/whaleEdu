@@ -20,13 +20,13 @@ const HomeWrapperCard = (props) => {
     // slidesPerView: 1,
     centeredSiles: true,
     slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 20,
-      stretch: 5,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
+    // coverflowEffect: {
+    //   rotate: 20,
+    //   stretch: 5,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows: true,
+    // },
     autoplay: {
       delay: getRandomNumber(3000, 5000),
       disableOnInteraction: false,
@@ -49,7 +49,7 @@ const HomeWrapperCard = (props) => {
         spaceBetween: 20,
       },
     },
-    effect: "coverflow",
+    // effect: "coverflow",
     grabCursor: true,
     // cubeEffect: {
     //   shadow: true,

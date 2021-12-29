@@ -6,6 +6,8 @@ import ExBlog from "./ExBlog/ExBlog";
 import ExImage from "./ExImage/ExImage";
 import ExText from "./ExText/ExText";
 import ExMenu from "./ExMenu/ExMenu";
+import ExNav from "./ExNav/ExNav";
+import ExHeaderPage from "./ExHeaderPage/ExHeaderPage";
 
 export {
   ExLogos,
@@ -16,4 +18,6 @@ export {
   ExImage,
   ExText,
   ExMenu,
+  ExNav,
+  ExHeaderPage,
 };

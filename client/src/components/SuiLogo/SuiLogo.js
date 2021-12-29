@@ -80,7 +80,7 @@ SuiLogo.Large = function Large(props) {
 
 SuiLogo.Menu = function Large(props) {
   const { size, alt, src } = props;
-  const sizes = { width: 45 || size, height: 45 || size };
+  const sizes = { width: 35 || size, height: 35 || size };
   return (
     <>
       <Avatar

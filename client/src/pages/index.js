@@ -5,7 +5,7 @@ import Head from "next/head";
 import { SuiBreak, SuiContainer } from "../components";
 import SuiHidden from "../components/SuiHidden/SuiHidden";
 
-import { ExContainer, ExMenu } from "../Examples";
+import { ExContainer, ExMenu, ExNav } from "../Examples";
 import { HomeBanner, HomeKeyBlog, HomeWrapperCard } from "../sections/Home";
 import { homePageMenu } from "../data/dataHomePage";
 
@@ -24,14 +24,20 @@ export default function Home() {
           alignItems="flex-start"
           spacing={{ lg: 2, sx: 0 }}
         >
-          <SuiHidden.lg>
+          {/* <SuiHidden.lg>
             <Stack direction="column" spacing={2} width={220}>
               <ExContainer.SignUp />
               {homePageMenu.map((item, i) => {
                 return <ExMenu key={i} menu={item.menu} title={item.title} />;
               })}
             </Stack>
-          </SuiHidden.lg>
+          </SuiHidden.lg> */}
+          <ExNav.NavMenu>
+            <ExContainer.SignUp />
+            {homePageMenu.map((item, i) => {
+              return <ExMenu key={i} menu={item.menu} title={item.title} />;
+            })}
+          </ExNav.NavMenu>
           {/* left */}
           <Box sx={{ width: "100%", overflow: "hidden" }}>
             {/* Section 1 */}

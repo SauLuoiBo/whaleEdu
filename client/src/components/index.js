@@ -9,6 +9,8 @@ import SuiIcon from "./SuiIcon/SuiIcon";
 import SuiBreak from "./SuiBreak/SuiBreak";
 import SuiAvatar from "./SuiAvatar/SuiAvatar";
 import SuiLine from "./SuiLine/SuiLine";
+import SuiHidden from "./SuiHidden/SuiHidden";
+import SuiVisible from "./SuiVisible/SuiVisible";
 
 export {
   SuiButton,
@@ -22,4 +24,6 @@ export {
   SuiBreak,
   SuiAvatar,
   SuiLine,
+  SuiHidden,
+  SuiVisible,
 };

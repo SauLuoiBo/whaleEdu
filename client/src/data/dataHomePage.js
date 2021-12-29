@@ -44,7 +44,7 @@ export const homePageMenu = [
       {
         text: "Câu chuyện đào tạo",
         href: mainMenu.homePage,
-        icon: "menu-teacher.svg",
+        icon: "menu-teachers.svg",
       },
       { text: "Chia sẻ", href: mainMenu.courses, icon: "menu-share.svg" },
       { text: "Giao lưu", href: mainMenu.skill, icon: "menu-trade.svg" },
