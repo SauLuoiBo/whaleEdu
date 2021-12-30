@@ -1,5 +1,7 @@
+const routes = require("./configs/router");
+
 module.exports = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
 };
 
 const withTM = require("next-transpile-modules")([
@@ -8,12 +10,20 @@ const withTM = require("next-transpile-modules")([
   "@mui/icons-material", // If @mui/icons-material is being used
 ]);
 
-module.exports = withTM({
+// module.exports = withTM({
+//   webpack: (config) => {
+//     config.resolve.alias = {
+//       ...config.resolve.alias,
+//       "@mui/styled-engine": "@mui/styled-engine-sc",
+//     };
+//     return config;
+//   },
+// });
+
+module.exports = {
   webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "@mui/styled-engine": "@mui/styled-engine-sc",
-    };
+    config.resolve.alias["@material-ui/styled-engine"] =
+      "@material-ui/styled-engine-sc";
     return config;
   },
-});
+};
