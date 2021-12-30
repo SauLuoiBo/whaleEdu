@@ -12,12 +12,4 @@ module.exports = withTM({
     };
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: "/home",
-        destination: "/",
-      },
-    ];
-  },
 });
