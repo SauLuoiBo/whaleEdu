@@ -11,6 +11,7 @@ import SuiAvatar from "./SuiAvatar/SuiAvatar";
 import SuiLine from "./SuiLine/SuiLine";
 import SuiHidden from "./SuiHidden/SuiHidden";
 import SuiVisible from "./SuiVisible/SuiVisible";
+import SuiBox from "./SuiBox/SuiBox";
 
 export {
   SuiButton,
@@ -26,4 +27,5 @@ export {
   SuiLine,
   SuiHidden,
   SuiVisible,
+  SuiBox,
 };

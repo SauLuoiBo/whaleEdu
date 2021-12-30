@@ -22,6 +22,21 @@ SuiStack.Row = function Row({ children, sx }) {
   );
 };
 
+SuiStack.RowFlex = function RowFlex({ children, sx }) {
+  return (
+    <Stack
+      width="100%"
+      direction="row"
+      alignItems="flex-start"
+      justifyContent="flex-start"
+      spacing={1}
+      sx={sx}
+    >
+      {children}
+    </Stack>
+  );
+};
+
 SuiStack.ColumnFlex = function ColumnFlex({ children, sx, spacing }) {
   return (
     <Stack
@@ -62,6 +77,20 @@ SuiStack.Center = function Center({ children, sx }) {
       spacing={1}
       flexWrap="wrap"
       sx={sx}
+    >
+      {children}
+    </Stack>
+  );
+};
+
+SuiStack.AutoWrap = function AutoWrap({ children, sx }) {
+  return (
+    <Stack
+      direction={{ xs: "column", md: "row" }}
+      justifyContent="flex-start"
+      alignItems="flex-start"
+      spacing={2}
+      m={0}
     >
       {children}
     </Stack>

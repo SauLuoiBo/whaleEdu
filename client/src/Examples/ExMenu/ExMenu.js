@@ -53,3 +53,21 @@ ExMenu.Card = function Card(props) {
     </Button>
   );
 };
+
+ExMenu.Change = function Card(props) {
+  const { onClick, text, src } = props;
+  return (
+    <Button variant="text" onClick={onClick} sx={{ width: "100%" }}>
+      <SuiStack.Row>
+        <SuiLogo.Menu src={src} />
+        <Typography
+          variant="h3"
+          textOverflow={"hidden"}
+          sx={{ textTransform: "none" }}
+        >
+          {text || "text"}
+        </Typography>
+      </SuiStack.Row>
+    </Button>
+  );
+};

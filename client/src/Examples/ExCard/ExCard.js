@@ -64,4 +64,33 @@ ExCard.Advise = function Advisee(props) {
   );
 };
 
-
+ExCard.Exercise = function Exercise(props) {
+  const { number, name, teacher, href, linkPDF } = props;
+  return (
+    <Box
+      width={400}
+      bgcolor={"white.main"}
+      borderRadius={2}
+      paddingX={1}
+      paddingY={2}
+      sx={{ "&:hover": { transform: "scale(1.01)" }, cursor: "pointer" }}
+    >
+      <SuiStack.RowFlex>
+        <SuiAvatar />
+        <SuiStack.ColumnFlex>
+          <Typography variant="h3">Đề số {number || "1"}:</Typography>
+          <Typography variant="h3">{name || "name"}</Typography>
+          <Typography variant="h3">
+            Biên soạn: {teacher || "teacher"}
+          </Typography>
+          <SuiBreak.Medium />
+        </SuiStack.ColumnFlex>
+      </SuiStack.RowFlex>
+      <SuiStack.Center>
+        <Typography>Tải file PDF</Typography>
+        <Typography>Lời giải</Typography>
+        <Typography>Video chữa</Typography>
+      </SuiStack.Center>
+    </Box>
+  );
+};

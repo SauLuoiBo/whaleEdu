@@ -38,3 +38,13 @@ ExNav.NavMenuLearn = function NavMenuLearn() {
     </ExNav.NavMenu>
   );
 };
+
+ExNav.NavMenuTest10 = function NavMenuTest10() {
+  return (
+    <ExNav.NavMenu>
+      {learnPageMenu.map((item, i) => {
+        return <ExMenu key={i} menu={item.menu} title={item.title} />;
+      })}
+    </ExNav.NavMenu>
+  );
+};

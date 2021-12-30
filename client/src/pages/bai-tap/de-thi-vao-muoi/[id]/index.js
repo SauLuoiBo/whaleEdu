@@ -1,7 +1,7 @@
 import React from "react";
 
-const Policy = () => {
+const index = () => {
   return <div></div>;
 };
 
-export default Policy;
+export default index;
