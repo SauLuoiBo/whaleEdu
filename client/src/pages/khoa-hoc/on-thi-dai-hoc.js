@@ -5,7 +5,7 @@ import { ExHeaderPage, ExNav } from "../../Examples";
 import { CoursesWrapper } from "../../sections/Courses";
 import { Stack } from "@mui/material";
 
-const Courses = () => {
+const DaiHoc = () => {
   return (
     <>
       <Head>
@@ -37,4 +37,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default DaiHoc;

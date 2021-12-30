@@ -1,10 +1,15 @@
 export const mainMenu = {
   homePage: "/",
-  courses: "/learn/khoa-hoc",
-  skill: "/learn/ky-nang",
-  document: "/learn/tai-lieu-hoc",
-  excercise: "/learn/bai-tap",
-  pricing: "/learn/dang-ky-hoc",
+  courses: "/khoa-hoc",
+  introduce: "/gioi-thieu",
+  excercise: "/bai-tap",
+  login: "/dang-nhap",
+  signup: "/dang-ky",
+  blog: "/blog",
+  offline: "/lop-hoc-offline",
+  pricing: "/dang-ky-hoc",
+  profile: "/profile",
+  user: "/user",
 };
 
 export const learnMenu = {
