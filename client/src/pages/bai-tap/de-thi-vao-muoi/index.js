@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { SuiBreak, SuiContainer, SuiStack } from "../../../components";
+import { SuiBreak, SuiStack } from "../../../components";
 import {
   ExCard,
   ExContainer,
@@ -10,7 +10,7 @@ import {
 } from "../../../Examples";
 import { Box, Stack } from "@mui/material";
 
-import WrapperExercise from "../../../sections/Exercise/WrapperExercise/WrapperExercise";
+import { WrapperExercise } from "../../../sections/Exercise";
 
 const DeThiVaoMuoi = () => {
   return (

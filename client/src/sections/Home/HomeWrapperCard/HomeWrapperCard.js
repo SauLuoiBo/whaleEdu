@@ -17,16 +17,9 @@ SwiperCore.use([EffectCube, Pagination, Autoplay, EffectCoverflow]);
 
 const HomeWrapperCard = (props) => {
   var settings = {
-    // slidesPerView: 1,
     centeredSiles: true,
     slidesPerView: "auto",
-    // coverflowEffect: {
-    //   rotate: 20,
-    //   stretch: 5,
-    //   depth: 100,
-    //   modifier: 1,
-    //   slideShadows: true,
-    // },
+
     autoplay: {
       delay: getRandomNumber(3000, 5000),
       disableOnInteraction: false,
@@ -49,14 +42,9 @@ const HomeWrapperCard = (props) => {
         spaceBetween: 20,
       },
     },
-    // effect: "coverflow",
+
     grabCursor: true,
-    // cubeEffect: {
-    //   shadow: true,
-    //   slideShadows: true,
-    //   shadowOffset: 20,
-    //   shadowScale: 0.94,
-    // },
+
     pagination: true,
     className: "mySwiper",
     style: {

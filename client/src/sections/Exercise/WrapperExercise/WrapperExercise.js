@@ -4,24 +4,18 @@ import { SuiBreak, SuiLine, SuiStack } from "../../../components";
 import ExCardSubject from "../../../Examples/ExCardSubject/ExCardSubject";
 import { ExText, ExButton } from "../../../Examples";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  EffectCube,
-  Pagination,
-  Autoplay,
-  EffectCoverflow,
-} from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { getRandomNumber } from "../../../util/random/getRandomNumber";
 
-SwiperCore.use([EffectCube, Pagination, Autoplay, EffectCoverflow]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const WrapperExercise = (props) => {
   var settings = {
-    // slidesPerView: 1,
     centeredSiles: true,
     slidesPerView: "auto",
 
     autoplay: {
-      delay: getRandomNumber(5000, 10000),
+      delay: getRandomNumber(3000, 5000),
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -34,7 +28,7 @@ const WrapperExercise = (props) => {
         spaceBetween: 15,
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 15,
       },
       1340: {

@@ -1,7 +1,7 @@
 import React from "react";
 
-const DeThiDaiHoc = () => {
+const DaiHoc = () => {
   return <div></div>;
 };
 
-export default DeThiDaiHoc;
+export default DaiHoc;
