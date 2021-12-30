@@ -1,13 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { SuiBreak, SuiStack } from "../../../components";
-import {
-  ExCard,
-  ExContainer,
-  ExHeaderPage,
-  ExMenu,
-  ExNav,
-} from "../../../Examples";
+import { ExContainer, ExHeaderPage } from "../../../Examples";
 import { Box, Stack } from "@mui/material";
 
 import { WrapperExercise } from "../../../sections/Exercise";

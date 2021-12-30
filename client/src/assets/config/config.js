@@ -1,6 +1,6 @@
 export const mainMenu = {
   homePage: "/",
-  courses: "/courses",
+  courses: "/khoa-hoc",
   introduce: "/gioi-thieu",
   excercise: "/bai-tap",
   login: "/dang-nhap",
