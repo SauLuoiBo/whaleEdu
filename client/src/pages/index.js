@@ -35,7 +35,6 @@ export default function Home() {
           </Stack>
         </SuiBox.Right>
       </Stack>
-
       {/* section 2 */}
       <SuiBreak.Large />
       <Stack

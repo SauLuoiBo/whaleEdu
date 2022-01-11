@@ -17,7 +17,12 @@ const SuiButton = (props) => {
 export default SuiButton;
 
 SuiButton.Full = function Full(props) {
-  const { text, onClick } = props;
+  //khai bao
+  const { text, onClick } = props
+
+  //ham
+
+  //ket suát
   return (
     <Button variant="containedPrimary" sx={{ width: "100%" }} onClick={onClick}>
       <Typography variant="h2">{text || "text"}</Typography>
